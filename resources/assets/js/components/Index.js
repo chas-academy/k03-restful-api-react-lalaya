@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Shop from './Shop/Shop';
 import Products from './Products/Product';

@@ -9,7 +9,7 @@ export default class AdminDashboard extends Component {
                     <div className="col-md-8">
                         <h1>Hello Admin!</h1>
                         <button>Edit Users</button>
-                        <button>Edit Products</button>
+                        <button>Edit Products Testing!</button>
                     </div>
                 </div>
             </div>
