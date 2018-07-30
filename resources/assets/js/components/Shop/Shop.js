@@ -1,24 +1,64 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import "./styles.css";
 
 export default class Shop extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">
-                            <h1> Hello ! Welcome to this shop!</h1>
-                            </div>
-
-                            <div className="card-body">
-                                Testing
-                            </div>
-                        </div>
+                <div className="row first-row-product">
+                    <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                        <a href="#">
+                            <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                        <a href="#">
+                            <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                        <a href="#">
+                            <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                        </a>
                     </div>
                 </div>
-            </div>
+
+                <div className="row">
+                    <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                        <a href="#">
+                            <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                        <a href="#">
+                            <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                        <a href="#">
+                            <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                        </a>
+                </div>
+             </div>
+            <div className="row">
+                <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                    <a href="#">
+                        <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                    </a>
+                </div>
+                <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                    <a href="#">
+                        <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                    </a>
+                </div>
+                <div className="col-lg-4 col-md-4 col-sm-4 product-img">
+                    <a href="#">
+                        <img src="http://fakeimg.pl/365x365/" className="product-thumbnail"/>
+                    </a>
+                </div>
+             </div>
+         </div>
         );
     }
 }

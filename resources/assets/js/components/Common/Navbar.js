@@ -27,7 +27,6 @@ export default class Navbar extends Component {
 
     render() {
         return (
-
           <Menu disableCloseOnEsc left isOpen={this.state.menuOpen}>
             <a id="about" className="menu-item" href="/about">About</a>
             <a id="cart" className="menu-item" href="/cart">Cart</a>
@@ -41,7 +40,6 @@ export default class Navbar extends Component {
             <a id="sign-in" className="menu-item" href="/sign-in">Sign in</a>
             <a id="register" className="menu-item" href="/register">Register</a>
           </Menu>
-        
       
         );
     }
