@@ -1,7 +1,15 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 {/* import Shop from './Shop/Shop'; */}
-import Products from './Products/Product'; 
+{/*}mport Products from './Products/Product'; */}
+{/* import AdminDashboard from './Admin/AdminDashboard'; */}
+{/* import AdminUserList from './Admin/AdminUsersList'; */}
+{/* import AdminProductsList from './Admin/AdminProductsList'; */}
+{/* import UserNoRegistration from './User/UserNoRegistration'; */}
+{/* import UserEditProfile from './User/UserEditProfile'; */}
+import UserDashboard from './User/UserDashboard'; 
+
+
 import Navbar from './Common/Navbar';
 
 
@@ -12,10 +20,16 @@ export default class Index extends Component {
     return (
       <div>
       <Navbar />
+        {/* <AdminUserList /> */}
+        {/* <AdminProductsList /> */}
+        {/* <AdminDashboard /> */}
+        {/* <Shop />*/}
+        {/* <Products /> */}
+        {/* <UserNoRegistration /> */}
+        {/* <UserEditProfile /> */}
+        <UserDashboard />
 
-        {/*<Shop />*/}
 
-       <Products />
       </div>
     );
   }

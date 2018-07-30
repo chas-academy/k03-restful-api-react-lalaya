@@ -30,7 +30,7 @@ export default class Products extends Component {
                                                 <a className="dropdown-item" href="#">50x70cm</a>
                                             </div>
                                         </div>
-                                        <a href="#" type="submit" className="btn btn-block btn-primary buy-btn">Add to <i class="fas fa-shopping-bag"></i></a>
+                                        <a href="#" type="submit" className="btn btn-block btn-primary buy-btn">Add to <i className="fas fa-shopping-bag"></i></a>
                                     </div>
                                 </div>
                             </div>

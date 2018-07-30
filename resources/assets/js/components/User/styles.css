@@ -1,0 +1,50 @@
+.address-form,
+.user-edit-profile {
+  padding-top: 100px;
+}
+
+.form-group {
+  margin-left: 0px !important;
+}
+.btn-block {
+  background-color: pink;
+  border-color: pink;
+  color: white;
+}
+
+#input-name, 
+#input-lastname,
+#input-email,
+#input-mobile,
+#input-address,
+#input-address2,
+#input-city,
+#input-zip
+{
+  border-color: pink;
+}
+
+/* User Dashboard */ 
+
+.user-dashboard {
+  padding-top: 200px
+}
+
+.badge {
+  padding: 20px 30px 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.badge:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.badge-info:hover {
+  background-color: pink;
+}

@@ -1,0 +1,41 @@
+.edit-users,
+.edit-products {
+  padding-top: 100px
+}
+
+#input-name, 
+#input-lastname,
+#input-email,
+#input-mobile,
+#input-address,
+#input-address2,
+#input-city,
+#input-zip {
+  border-color: pink;
+}
+
+
+/* Admin Dashboard */ 
+
+.edit-links {
+  padding-top: 200px
+}
+
+.badge {
+  padding: 20px 30px 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.badge:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.badge-info:hover {
+  background-color: pink;
+}

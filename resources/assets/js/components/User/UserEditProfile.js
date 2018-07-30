@@ -2,29 +2,12 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
 
-export default class AdminUsersList extends Component {
+export default class UserEditProfile extends Component {
     render() {
         return (
             <div className="container">
               <div className="col justify-content-center">
-                <form className="edit-users">
-
-                  <div className="form-group">
-                      <input className="form-control" type="search" placeholder="Search for user" aria-label="Search" />
-                  </div>
-                  <div className="form-group">
-                      <button class="btn btn-block btn-primary" type="submit">Search</button>
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="text">Firstname</label>
-                    <input type="name" className="form-control" id="input-name" placeholder="Firstname" />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="text">Lastname</label>
-                    <input type="name" className="form-control" id="input-lastname" placeholder="Lastname"/>
-                  </div>
+                <form className="user-edit-profile">
 
                   <div className="form-group">
                     <label htmlFor="input-email">Email</label>
@@ -52,11 +35,11 @@ export default class AdminUsersList extends Component {
                   </div>
 
                   <div className="form-group">
-                    <button type="submit" className="btn btn-block btn-primary">Edit User</button>
+                    <button type="submit" className="btn btn-block btn-primary">Update Profile</button>
                   </div>
 
                   <div className="form-group">
-                    <button type="submit" className="btn btn-block btn-danger">Delete User</button>
+                    <button type="submit" className="btn btn-block btn-danger">Delete account</button>
                   </div>
 
                 </form>
@@ -68,6 +51,6 @@ export default class AdminUsersList extends Component {
 }
 
 
-if (document.getElementById('adminUsersList')) {
-    ReactDOM.render(<AdminUsersList />, document.getElementById('adminUsersList'));
+if (document.getElementById('userEditProfile')) {
+    ReactDOM.render(<UserEditProfile />, document.getElementById('userEditProfile'));
 }

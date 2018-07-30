@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import './styles.css'; 
 
 export default class UserDashboard extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <h1>Hello Admin!</h1>
-                        <button>Edit Users</button>
-                        <button>Edit Products</button>
-                    </div>
-                </div>
+              <div className="col justify-content-center user-dashboard">
+                <a href="#" className="badge badge-light btn-block">Edit profile</a>
+                <a href="#" className="badge badge-light btn-block">View current order</a>
+                <a href="#" className="badge badge-light btn-block">View past orders</a>
+              </div>
             </div>
         );
     }
