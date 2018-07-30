@@ -36865,7 +36865,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Shop_Shop__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Products_Product__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Common_Navbar__ = __webpack_require__(61);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -36877,8 +36877,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+{/* import Shop from './Shop/Shop'; */}
 
-{/*import Products from './Products/Product'; */}
 
 
 var Index = function (_Component) {
@@ -36897,7 +36897,7 @@ var Index = function (_Component) {
         'div',
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Common_Navbar__["a" /* default */], null),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Shop_Shop__["a" /* default */], null)
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Products_Product__["a" /* default */], null)
       );
     }
   }]);
@@ -56262,6 +56262,8 @@ module.exports = camelize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__styles_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_burger_menu__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_burger_menu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_burger_menu__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Image_Logo_nouchii_logo_png__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Image_Logo_nouchii_logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Image_Logo_nouchii_logo_png__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -56269,6 +56271,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -56306,41 +56309,46 @@ var Navbar = function (_Component) {
     key: 'render',
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_3_react_burger_menu__["slide"],
-        { disableCloseOnEsc: true, left: true, isOpen: this.state.menuOpen },
+        'header',
+        null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'a',
-          { id: 'about', className: 'menu-item', href: '/about' },
-          'About'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'a',
-          { id: 'cart', className: 'menu-item', href: '/cart' },
-          'Cart'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'a',
-          { id: 'product-category', className: 'menu-item', href: '/category' },
-          'Category'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'form',
-          { className: 'navbar-form navbar-left' },
+          __WEBPACK_IMPORTED_MODULE_3_react_burger_menu__["slide"],
+          { id: 'burger-menu', disableCloseOnEsc: true, left: true, isOpen: this.state.menuOpen },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_4__Image_Logo_nouchii_logo_png___default.a, className: 'navbar-brand mx-auto', alt: 'logo' }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'form-group' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
+            'a',
+            { id: 'about', className: 'menu-item', href: '/about' },
+            'About'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'a',
+            { id: 'cart', className: 'menu-item', href: '/cart' },
+            'Cart'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'a',
+            { id: 'product-category', className: 'menu-item', href: '/category' },
+            'Category'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'form',
+            { className: 'navbar-form navbar-left' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'div',
+              { className: 'form-group' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'a',
+            { id: 'sign-in', className: 'menu-item', href: '/sign-in' },
+            'Sign in'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'a',
+            { id: 'register', className: 'menu-item', href: '/register' },
+            'Register'
           )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'a',
-          { id: 'sign-in', className: 'menu-item', href: '/sign-in' },
-          'Sign in'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'a',
-          { id: 'register', className: 'menu-item', href: '/register' },
-          'Register'
         )
       );
     }
@@ -56396,7 +56404,7 @@ exports = module.exports = __webpack_require__(64)(false);
 
 
 // module
-exports.push([module.i, ".bm-overlay {\n  background: rgb(255, 0, 128) !important;\n  /* display: none;*/\n}\n\n\n.bm-menu-wrap {\n  width: 100%;\n\n}\n\n.bm-menu {\n  padding: 10em 0;\n}\n\n.bm-cross-button span {\n  background: white;\n}\n\n.bm-cross-button button {\n  left: 50px;\n  height: 25px;\n  right: 50px;\n  top: 50px;\n} \n\n.menu-item {\n  color: black;\n  text-align: center;\n  font-size: 20px;\n  padding-bottom: 7px;\n}\n\n.menu-item:hover {\n  color: white;\n  text-decoration: none;\n}\n\n.bm-burger-bars {\n  background: pink;\n  width: 50px;\n}\n\n.bm-burger-button {\n  position: fixed;\n  left: 50px;\n  height: 25px;\n  right: 50px;\n  top: 50px;\n}\n\n#sign-in {\n  margin-top: 10px;\n}\n\n.form-group {\n  margin-left: 50px;\n  margin-top: 20px;\n\n}\n\n\n", ""]);
+exports.push([module.i, ".navbar-brand {\n  width: 50%;\n  margin-bottom: 2em;\n  margin-top: 1em;\n\n}\n.bm-overlay {\n  color: white;\n  opacity: 0;\n  background: transparent !important;\n}\n\n#burger-menu {\nwidth: 30%;\n}\n\n.bm-menu {\n  background: pink;\n  padding: 2.5em 2em;\n}\n\n.bm-cross-button {\n  right: 30px !important;\n  top: 30px !important;\n}\n\n.bm-item-list {\n  height: 50% !important;\n  margin-top: 20px;\n  \n}\n.bm-cross-button span {\n  background: white;\n}\n\n.menu-item {\n  color: black;\n  text-align: center;\n  font-size: 20px;\n  padding-bottom: 7px;\n}\n\n.menu-item:hover {\n  color: white;\n  text-decoration: none;\n}\n\n.bm-burger-bars {\n  background: pink;    \n  height: 10% !important;\n}\n\n.bm-burger-button {\n  position: fixed;\n  width: 40px;\n  height: 30px;\n  left: 40px;\n  top: 40px;\n}\n\n#sign-in {\n  margin-top: 10px;\n}\n\n.form-group {\n  margin-left: 50px;\n  margin-top: 20px;\n}\n\n\n@media screen and (max-width: 426px) {\n  .bm-burger-bars {\n    height: 10% !important;\n  }\n\n  .bm-burger-button {\n    width: 30px !important;\n    height: 20px !important;\n    left: 15px;\n    top: 20px;\n  }\n}\n", ""]);
 
 // exports
 
@@ -67040,7 +67048,10 @@ module.exports = exports['default'];
 
 /***/ }),
 /* 85 */,
-/* 86 */
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67048,8 +67059,10 @@ module.exports = exports['default'];
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_css__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_css__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__styles_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Image_Print_alphaA_30x40cm_unsigned_png__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Image_Print_alphaA_30x40cm_unsigned_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Image_Print_alphaA_30x40cm_unsigned_png__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67062,16 +67075,17 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Shop = function (_Component) {
-    _inherits(Shop, _Component);
 
-    function Shop() {
-        _classCallCheck(this, Shop);
+var Products = function (_Component) {
+    _inherits(Products, _Component);
 
-        return _possibleConstructorReturn(this, (Shop.__proto__ || Object.getPrototypeOf(Shop)).apply(this, arguments));
+    function Products() {
+        _classCallCheck(this, Products);
+
+        return _possibleConstructorReturn(this, (Products.__proto__ || Object.getPrototypeOf(Products)).apply(this, arguments));
     }
 
-    _createClass(Shop, [{
+    _createClass(Products, [{
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -67079,94 +67093,85 @@ var Shop = function (_Component) {
                 { className: 'container' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'row first-row-product' },
+                    { className: 'card product-card justify-content-center' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
+                        { className: 'row' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'row' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'row' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
-                        )
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-lg-4 col-md-4 col-sm-4 product-img' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { href: '#' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'http://fakeimg.pl/365x365/', className: 'product-thumbnail' })
+                            'div',
+                            { className: 'col' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'card-block' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'card-img-top', src: __WEBPACK_IMPORTED_MODULE_3__Image_Print_alphaA_30x40cm_unsigned_png___default.a, alt: 'Product Image' }),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'card-body' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'card-block px-2' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'h3',
+                                            { className: 'card-title' },
+                                            'Alpha A'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'card-text' },
+                                            'Our favorite letters A, M & X in print.'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'h6',
+                                            { className: 'product-title' },
+                                            'Paper'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'product-paper-type' },
+                                            'Amber Graphic | 200 gsm'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'h6',
+                                            { className: 'product-title' },
+                                            'Print Type'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'p',
+                                            { className: 'product-print-type' },
+                                            'Hybrid Print Technology'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'btn-group btn-block', role: 'group' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'button',
+                                                { id: 'btn-product-size', type: 'submit', className: 'btn btn-block dropdown-toggle', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
+                                                'Size'
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'div',
+                                                { className: 'dropdown-menu btn-block', 'aria-labelledby': 'btn-product-size' },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'a',
+                                                    { className: 'dropdown-item', href: '#' },
+                                                    '30x40cm'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'a',
+                                                    { className: 'dropdown-item', href: '#' },
+                                                    '50x70cm'
+                                                )
+                                            )
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'a',
+                                            { href: '#', type: 'submit', className: 'btn btn-block btn-primary buy-btn' },
+                                            'Add to ',
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { 'class': 'fas fa-shopping-bag' })
+                                        )
+                                    )
+                                )
+                            )
                         )
                     )
                 )
@@ -67174,24 +67179,24 @@ var Shop = function (_Component) {
         }
     }]);
 
-    return Shop;
+    return Products;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Shop);
+/* harmony default export */ __webpack_exports__["a"] = (Products);
 
 
-if (document.getElementById('shop')) {
-    __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Shop, null), document.getElementById('shop'));
+if (document.getElementById('products')) {
+    __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Products, null), document.getElementById('products'));
 }
 
 /***/ }),
-/* 87 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(88);
+var content = __webpack_require__(91);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -67216,7 +67221,7 @@ if(false) {
 }
 
 /***/ }),
-/* 88 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(64)(false);
@@ -67224,10 +67229,22 @@ exports = module.exports = __webpack_require__(64)(false);
 
 
 // module
-exports.push([module.i, ".first-row-product {\n  margin-top: 150px;\n}\n\n.product-thumbnail {\n  padding: 7.5px 0 7.5px 0;\n}", ""]);
+exports.push([module.i, "\n.product-card {\n  margin-top: 100px;\n  border: none;\n}\n\n.card-title {\n  margin-top: 50px;\n  margin-bottom: 0px;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n\n.product-title {\n  font-weight: bold;\n  text-transform: uppercase;\n  margin-bottom: 0.1em;\n}\n\n#btn-product-size {\n  background-color: lightslategrey;\n  border-color: lightslategray;\n  color: white;\n}\n\n\n.buy-btn {\n  background-color: pink;\n  border-color: pink;\n  color: white;\n} \n\n.buy-btn:hover {\n  background-color: black;\n}\n\n\n\n/* Small devices (landscape phones, 576px and up) */\n@media (min-width: 576px) {\n\n}\n\n/* Medium devices (tablets, 768px and up) */\n@media (min-width: 768px) {\n  .product-card {\n    margin-top: 200px;\n  }\n\n}\n\n", ""]);
 
 // exports
 
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/alphaA_30x40cm_unsigned.png?fcd7faf6226e1fb80c1130dae37a226c";
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/nouchii_logo.png?ff47b8c4e516bb4b127c9846f3fae4e8";
 
 /***/ })
 /******/ ]);

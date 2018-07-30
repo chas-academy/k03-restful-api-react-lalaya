@@ -1,0 +1,51 @@
+
+.product-card {
+  margin-top: 100px;
+  border: none;
+}
+
+.card-title {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.1em;
+}
+
+#btn-product-size {
+  background-color: lightslategrey;
+  border-color: lightslategray;
+  color: white;
+}
+
+
+.buy-btn {
+  background-color: pink;
+  border-color: pink;
+  color: white;
+} 
+
+.buy-btn:hover {
+  background-color: black;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .product-card {
+    margin-top: 200px;
+  }
+
+}
+

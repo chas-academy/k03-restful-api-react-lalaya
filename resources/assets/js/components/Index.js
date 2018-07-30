@@ -1,7 +1,7 @@
  import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Shop from './Shop/Shop';
-{/*import Products from './Products/Product'; */}
+{/* import Shop from './Shop/Shop'; */}
+import Products from './Products/Product'; 
 import Navbar from './Common/Navbar';
 
 
@@ -13,9 +13,9 @@ export default class Index extends Component {
       <div>
       <Navbar />
 
-        <Shop />
+        {/*<Shop />*/}
 
-       {/*  <Products /> */}
+       <Products />
       </div>
     );
   }
